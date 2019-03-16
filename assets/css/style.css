@@ -1,0 +1,26 @@
+@font-face {
+    font-family: thinkingOfBetty;
+    src: url(../fonts/Thinking_of_Betty.ttf);
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: thinkingOfBetty;
+}
+
+#navbar-example {
+    background-color: transparent !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)) !important;
+}
+
+nav a img {
+    max-width: 100px;
+}
+
+body {
+    background-color: white;
+}
+
+.carousel-item img {
+    max-height: 900px;
+}
+
