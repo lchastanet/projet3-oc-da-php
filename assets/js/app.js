@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(window).on('scroll', function(){
         if ($(window).scrollTop()) {
-            // addclass
+            $('#navbar').removeClass('navbar-transparent')
         } else {
-           //  removeclass
+            $('#navbar').addClass('navbar-transparent')
         }
     })
 })
