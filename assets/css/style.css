@@ -9,8 +9,15 @@
     src: url(../fonts/Thinking_of_Betty.ttf);
   }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, .carousel-caption h5, h6 {
+    position: relative;
     font-family: thinkingOfBetty;
+    color: white;
+}
+
+h5 {
+    font-family: thinkingOfBetty;
+    color: black;
 }
 
 .navbar-plain-color {
@@ -22,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-transparent {
     background-color: transparent !important;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6)) !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .7)) !important;
     transition: background-image .25s ease-in;
     transition: background-color .25s ease-in;
 }
@@ -49,7 +56,7 @@ body {
 }
 
 .carousel-item img {
-    max-height: 900px;
+    max-height: 1000px;
 }
 
 /* .carousel-item img:after {
@@ -61,22 +68,52 @@ body {
     opacity: 0;
 } */
 
-#actualites{
-    background-color: lightgreen;
-}
-#listeDesFilms {
-    background-color: lightblue;
+#actualites, #listeDesFilms, #inscription{
+    background-image: url('/assets/img/illustrations/cinema-442977_1920.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
-#inscription {
-    background-color: lightgrey;
-}
 
 #inscription,
 #listeDesFilms,
 #actualites{
-    padding: 50px 0 50px 0;
+    position: relative;
+    padding: 120px 0 75px 0;
+}
+
+#actualites::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, .9);
+  }
+
+#listeDesFilms h3 {
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+.carousel-caption {
+    bottom: 45%;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 15px;
+    max-width: 350px;
+    border: solid #e1443a 1px;
 }
 
 /*  */
+.filter-effect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
 
+.filter-effect-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
