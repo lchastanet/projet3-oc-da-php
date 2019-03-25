@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>Festival des Films de Plein Air</title>
 </head>
@@ -44,31 +45,31 @@
 
   <section id="accueil">
     <div class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div id="carouselHero" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselHero" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselHero" data-slide-to="1"></li>
+          <li data-target="#carouselHero" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="filter-effect"></div>
-            <img src="/assets/img/illustrations/cinema-442977_1920.jpg" class="d-block w-100" alt="illustation de cinéma">
+            <img src="/assets/img/illustrations/bridge-2166493_1920.png" class="d-block w-100" alt="illustation de cinéma">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
           <div class="carousel-item">
-              <div class="filter-effect"></div>
-            <img src="/assets/img/illustrations/foule.jpg" class="d-block w-100" alt="illustation de cinéma">
+            <div class="filter-effect"></div>
+            <img src="/assets/img/illustrations/colonnade-503217_1920.jpg" class="d-block w-100" alt="illustation de cinéma">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-              <div class="filter-effect"></div>
+            <div class="filter-effect"></div>
             <img src="/assets/img/illustrations/festival-1920.jpg" class="d-block w-100" alt="illustation de cinéma">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
@@ -76,11 +77,11 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselHero" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselHero" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -89,18 +90,26 @@
   </section>
 
   <section id="actualites">
+    <div class="gradientSeparator"></div>
     <div class="container">
       <h2 class="display-4 text-center">Derniers articles</h2>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div id="carouselArticles" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card mb-3">
               <a href="#" class="card-img-top"></a>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Premier article</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,10 +117,17 @@
             <div class="card mb-3">
               <a href="#" class="card-img-top"></a>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Deuxieme article</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -119,29 +135,36 @@
             <div class="card mb-3">
               <a href="#" class="card-img-top"></a>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Troisième article</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                   content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-      <div class="col-sm-6">
-        <button type="button" class="btn btn-red btn-lg btn-block">Précédent</button>
+        <div class="col-sm-6">
+          <button id="prevButton" type="button" class="btn btn-red btn-block">Précédent</button>
+        </div>
+        <div class="col-sm-6">
+          <button id="nextButton" type="button" class="btn btn-red btn-block">Suivant</button>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <button type="button" class="btn btn-red btn-lg btn-block">Suivant</button>
-      </div>      
     </div>
-  </div>
   </section>
 
   <section id="listeDesFilms">
     <div class="container">
-        <h2 class="display-4 text-center">Liste des projections</h2>
+      <h2 class="display-4 text-center">Liste des films</h2>
       <h3 class="display-4">Le 5 aôut</h3>
       <div class="card mb-3">
         <div class="row no-gutters">
@@ -151,7 +174,10 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Cyrano de Bergerac</h5>
-              <p class="card-text">Première adaptation cinématographique de Cyrano de Bergerac qui est une pièce en 5 actes écrite en vers, et presque entièrement en alexandrins. Edmond Rostand la qualifie de comédie héroïque mais les analystes y reconnaissent de nombreuses influences dont la principale est le théâtre romantique ou néo-romantique.</p>
+              <p class="card-text">Première adaptation cinématographique de Cyrano de Bergerac qui est une pièce en 5
+                actes écrite en vers, et presque entièrement en alexandrins. Edmond Rostand la qualifie de comédie
+                héroïque mais les analystes y reconnaissent de nombreuses influences dont la principale est le théâtre
+                romantique ou néo-romantique.</p>
               <p class="card-text"><small class="text-muted">De 20h à 22h</small></p>
             </div>
           </div>
@@ -162,7 +188,11 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Hardware Wars</h5>
-              <p class="card-text">Hardware Wars est un court-métrage parodique de 1978 portant sur une bande-annonce du film de science-fiction Star Wars: Episode IV - Un nouvel espoir. Le film de 13 minutes, sorti presque 18 mois après Star Wars: Épisode IV - Un nouvel espoir, consistait en un peu plus que des blagues et des jeux de mots qui dépendaient énormément de la familiarité du public avec l'original. La chanson thème est la célèbre "Ride of the Valkyries" de Richard Wagner.</p>
+              <p class="card-text">Hardware Wars est un court-métrage parodique de 1978 portant sur une bande-annonce
+                du film de science-fiction Star Wars: Episode IV - Un nouvel espoir. Le film de 13 minutes, sorti
+                presque 18 mois après Star Wars: Épisode IV - Un nouvel espoir, consistait en un peu plus que des
+                blagues et des jeux de mots qui dépendaient énormément de la familiarité du public avec l'original. La
+                chanson thème est la célèbre "Ride of the Valkyries" de Richard Wagner.</p>
               <p class="card-text"><small class="text-muted">De 22h à minuit</small></p>
             </div>
           </div>
@@ -180,7 +210,10 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Les Anges de l'enfer</h5>
-              <p class="card-text">Trois amis, deux frères américains et un Allemand, se sont rencontrés lors de leurs études. Mais quand éclate la Première Guerre mondiale, ils se retrouvent dans des camps opposés. Les deux frères s'engagent dans l'aviation : ils se battront dans les airs, mais aussi pour les faveurs d'une jeune Anglaise.</p>
+              <p class="card-text">Trois amis, deux frères américains et un Allemand, se sont rencontrés lors de leurs
+                études. Mais quand éclate la Première Guerre mondiale, ils se retrouvent dans des camps opposés. Les
+                deux frères s'engagent dans l'aviation : ils se battront dans les airs, mais aussi pour les faveurs
+                d'une jeune Anglaise.</p>
               <p class="card-text"><small class="text-muted">De 20h à 22h</small></p>
             </div>
           </div>
@@ -191,7 +224,14 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Je suis une légende</h5>
-              <p class="card-text">Le docteur Robert Morgan (Vincent Price) est le dernier être humain à avoir échappé à une épidémie qui a transformé les autres hommes et femmes en vampires. Depuis trois ans, toutes ses journées se ressemblent : le jour, les vampires, qui craignent la lumière du soleil, se reposent, pendant que Morgan, armé de pieux de bois, parcourt la ville, repère les refuges des morts-vivants affaiblis comme des zombis, les empale pour ensuite aller brûler leurs corps à la décharge. La nuit, il se réfugie dans sa maison, où sont suspendus miroirs et ail, que les vampires ne supportent pas. De temps en temps, il essaye de communiquer avec un éventuel autre être humain non affecté à l'aide d'une radio, mais toujours sans succès.</p>
+              <p class="card-text">Le docteur Robert Morgan (Vincent Price) est le dernier être humain à avoir échappé
+                à une épidémie qui a transformé les autres hommes et femmes en vampires. Depuis trois ans, toutes ses
+                journées se ressemblent : le jour, les vampires, qui craignent la lumière du soleil, se reposent,
+                pendant que Morgan, armé de pieux de bois, parcourt la ville, repère les refuges des morts-vivants
+                affaiblis comme des zombis, les empale pour ensuite aller brûler leurs corps à la décharge. La nuit, il
+                se réfugie dans sa maison, où sont suspendus miroirs et ail, que les vampires ne supportent pas. De
+                temps en temps, il essaye de communiquer avec un éventuel autre être humain non affecté à l'aide d'une
+                radio, mais toujours sans succès.</p>
               <p class="card-text"><small class="text-muted">De 22h à minuit</small></p>
             </div>
           </div>
@@ -209,7 +249,15 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">L'Amour et les pigeons</h5>
-              <p class="card-text">Vasily Kuzyakin (Alexander Mikhaïlov), employé de l'entreprise forestière et passionné d'élevage de pigeons, vit avec son épouse Nadezhda et ses trois enfants: Lyuda, qui est rentré de la ville après s'être séparé de son mari, un joyeux compatriote, Lyonka, et Olya. le préféré du père. Une fois que Vasily a été blessé au travail, puis, en compensation des dommages qui lui ont été causés, il a reçu une contravention au centre de villégiature. En séjournant à la station balnéaire, Vasily, un homme simple originaire de la campagne, rencontre une citadine corrompue (Lyudmila Gurchenko), qui entraîne un homme du pays (Alexander Mikhailov) et lui offre des fantasmes de confort urbain. Tout en vivant dans son appartement en ville, l’homme commence à perdre sa famille et décide finalement de retourner dans son village natal, où femme et enfants lui manquent aussi.</p>
+              <p class="card-text">Vasily Kuzyakin (Alexander Mikhaïlov), employé de l'entreprise forestière et
+                passionné d'élevage de pigeons, vit avec son épouse Nadezhda et ses trois enfants: Lyuda, qui est
+                rentré de la ville après s'être séparé de son mari, un joyeux compatriote, Lyonka, et Olya. le préféré
+                du père. Une fois que Vasily a été blessé au travail, puis, en compensation des dommages qui lui ont
+                été causés, il a reçu une contravention au centre de villégiature. En séjournant à la station
+                balnéaire, Vasily, un homme simple originaire de la campagne, rencontre une citadine corrompue
+                (Lyudmila Gurchenko), qui entraîne un homme du pays (Alexander Mikhailov) et lui offre des fantasmes de
+                confort urbain. Tout en vivant dans son appartement en ville, l’homme commence à perdre sa famille et
+                décide finalement de retourner dans son village natal, où femme et enfants lui manquent aussi.</p>
               <p class="card-text"><small class="text-muted">De 20h à 22h</small></p>
             </div>
           </div>
@@ -220,9 +268,15 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Metropolis</h5>
-              <p class="card-text">Le film se décompose en trois actes, Auftakt (commencement) (66 min.), Zwischenspiel (interlude) (28 min.) et Furioso (52 min.).
-                En 2026, Metropolis est une mégapole dans une société dystopique divisée en une ville haute, où vivent les familles intellectuelles dirigeantes, dans l'oisiveté, le luxe et le divertissement, et une ville basse, où les travailleurs font fonctionner la ville et sont opprimés par la classe dirigeante.
-                Maria (Brigitte Helm), une femme de la ville basse, essaie de promouvoir l'entente entre les classes, et emmène clandestinement des enfants d'ouvriers visiter la ville haute ; le groupe se fait repousser par les forces de l'ordre, mais Freder Fredersen (Gustav Fröhlich), le fils du dirigeant de Metropolis, tombe amoureux d'elle.</p>
+              <p class="card-text">Le film se décompose en trois actes, Auftakt (commencement) (66 min.), Zwischenspiel
+                (interlude) (28 min.) et Furioso (52 min.).
+                En 2026, Metropolis est une mégapole dans une société dystopique divisée en une ville haute, où vivent
+                les familles intellectuelles dirigeantes, dans l'oisiveté, le luxe et le divertissement, et une ville
+                basse, où les travailleurs font fonctionner la ville et sont opprimés par la classe dirigeante.
+                Maria (Brigitte Helm), une femme de la ville basse, essaie de promouvoir l'entente entre les classes,
+                et emmène clandestinement des enfants d'ouvriers visiter la ville haute ; le groupe se fait repousser
+                par les forces de l'ordre, mais Freder Fredersen (Gustav Fröhlich), le fils du dirigeant de Metropolis,
+                tombe amoureux d'elle.</p>
               <p class="card-text"><small class="text-muted">De 22h à minuit</small></p>
             </div>
           </div>
@@ -240,9 +294,15 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Le Vagabond</h5>
-              <p class="card-text">Charlot, un vagabond, sauve une jolie jeune fille de trois voleurs. Pour le remercier, elle l'invite à la ferme de son père. Celui-ci lui offre alors un travail, que Charlot accepte. Mais il ne connaît rien aux métiers de la ferme, et enchaîne les gaffes.
-                Les trois voleurs reviennent rôder près de la ferme et, croisant Charlot, lui proposent de voler l'argent du fermier et de partager le butin. Charlot accepte mais reste loyal à son patron et le prévient. Lorsque les voleurs passent à l'action, Charlot se blesse, et est pris en charge par la fille du fermier dont il est fou amoureux.            
-                Charlot pense alors que son amour pour la jeune fille est réciproque, mais déchante lorsque le petit ami apparaît. Malheureux d'amour, Charlot laisse un mot et s'en va.</p>
+              <p class="card-text">Charlot, un vagabond, sauve une jolie jeune fille de trois voleurs. Pour le
+                remercier, elle l'invite à la ferme de son père. Celui-ci lui offre alors un travail, que Charlot
+                accepte. Mais il ne connaît rien aux métiers de la ferme, et enchaîne les gaffes.
+                Les trois voleurs reviennent rôder près de la ferme et, croisant Charlot, lui proposent de voler
+                l'argent du fermier et de partager le butin. Charlot accepte mais reste loyal à son patron et le
+                prévient. Lorsque les voleurs passent à l'action, Charlot se blesse, et est pris en charge par la fille
+                du fermier dont il est fou amoureux.
+                Charlot pense alors que son amour pour la jeune fille est réciproque, mais déchante lorsque le petit
+                ami apparaît. Malheureux d'amour, Charlot laisse un mot et s'en va.</p>
               <p class="card-text"><small class="text-muted">De 20h à 22h</small></p>
             </div>
           </div>
@@ -253,8 +313,16 @@
           <div class="col-md-10">
             <div class="card-body">
               <h5 class="card-title">Le Voyage dans la Lune</h5>
-              <p class="card-text">Lors d'un congrès du Club des Astronomes, le professeur Barbenfouillis, président de ce club, surprend l'auditoire en faisant part de son projet de voyage dans la Lune. Il organise ensuite pour ses confrères la visite de l'atelier où l'obus spatial est en chantier. Il sera propulsé en direction de la Lune au moyen d'un canon géant de 300 mètres de long, embarquant à son bord six savants astronomes, dont Barbenfouillis.
-                Après le lancement réussi de leur fusée-obus, les six savants découvrent l'environnement lunaire et assistent à un lever de Terre. Épuisés par leur voyage, ils se couchent à même le sol et s'endorment. Apparaissent sept étoiles représentant la Grande Ourse, puis une étoile double, Phœbé et Saturne. Survient une tempête de neige provoquée par Phœbé (déesse assise sur son croissant de lune), qui les réveille.</p>
+              <p class="card-text">Lors d'un congrès du Club des Astronomes, le professeur Barbenfouillis, président de
+                ce club, surprend l'auditoire en faisant part de son projet de voyage dans la Lune. Il organise ensuite
+                pour ses confrères la visite de l'atelier où l'obus spatial est en chantier. Il sera propulsé en
+                direction de la Lune au moyen d'un canon géant de 300 mètres de long, embarquant à son bord six savants
+                astronomes, dont Barbenfouillis.
+                Après le lancement réussi de leur fusée-obus, les six savants découvrent l'environnement lunaire et
+                assistent à un lever de Terre. Épuisés par leur voyage, ils se couchent à même le sol et s'endorment.
+                Apparaissent sept étoiles représentant la Grande Ourse, puis une étoile double, Phœbé et Saturne.
+                Survient une tempête de neige provoquée par Phœbé (déesse assise sur son croissant de lune), qui les
+                réveille.</p>
               <p class="card-text"><small class="text-muted">De 22h à minuit</small></p>
             </div>
           </div>
@@ -269,8 +337,7 @@
   <section id="inscription">
     <div class="container">
       <h2 class="display-4 text-center">Inscription aux projections</h2>
-      <hr class="my-4">
-      <form>
+      <form id="contactForm">
         <div class="form-group row">
           <label for="" class="col-sm-3 col-form-label">Dates des projections</label>
           <div class="form-check form-check-inline col-sm-2">
@@ -306,7 +373,7 @@
             <input type="text" class="form-control" id="inputPassword" placeholder="email@example.com">
           </div>
         </div>
-        <button type="submit" class="btn btn-red btn-lg btn-block">S'inscrire</button>
+        <button type="submit" class="btn btn-red btn-block">S'inscrire</button>
       </form>
     </div>
   </section>
@@ -319,38 +386,26 @@
           <p>Here you can use rows and columns here to organize your footer content.</p>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
-
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5>Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-          </ul>
-<!-- intégrer google map -->
-        </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5>Links</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-          </ul>
+        <div class="col-md-6 mb-md-0 mb-3">
+          <div id="map"></div>
         </div>
       </div>
     </div>
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="#">exemple.com</a>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="#">festivalenpleinair-paris.org</a>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZovHVMFNMOf3fi2XucunR0TZGJMYo-io&callback=initMap"
+    async defer></script>
   <script src="/assets/js/app.js"></script>
 </body>
 
