@@ -7,7 +7,7 @@ $(document).ready(function () {
         }
     })
     $('#carouselArticles').carousel({
-        interval: 200000
+        interval: false
     })
     $('#prevButton').click(function () {
         $('#carouselArticles').carousel('prev')
@@ -23,9 +23,8 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 700, function(){
-            window.location.hash = hash;
-          })
-     
+            window.location.hash = hash
+          })  
      })
 })
 

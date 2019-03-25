@@ -54,26 +54,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="filter-effect"></div>
-            <img src="/assets/img/illustrations/bridge-2166493_1920.png" class="d-block w-100" alt="illustation de cinéma">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <img src="/assets/img/illustrations/bridge-2166493_1920.png" class="img-fluid d-block w-100" alt="illustation de cinéma">
+            <div class="carousel-caption d-md-block">
+              <h5>Un évènement exceptionnel</h5>
+              <p>Des projections entièrement gratuites en plein coeur de la capital.</p>
             </div>
           </div>
           <div class="carousel-item">
             <div class="filter-effect"></div>
-            <img src="/assets/img/illustrations/colonnade-503217_1920.jpg" class="d-block w-100" alt="illustation de cinéma">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="/assets/img/illustrations/colonnade-503217_1920.jpg" class="img-fluid d-block w-100" alt="illustation de cinéma">
+            <div class="carousel-caption d-md-block">
+              <h5>Un cadre exceptionnel</h5>
+              <p>Au sein du célèbre parc Montceau des chaises un projecteur et une immense toile tendu au milieu d’un poumon vert de la capital.</p>
             </div>
           </div>
           <div class="carousel-item">
             <div class="filter-effect"></div>
-            <img src="/assets/img/illustrations/festival-1920.jpg" class="d-block w-100" alt="illustation de cinéma">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <img src="/assets/img/illustrations/festival-1920.jpg" class="img-fluid d-block w-100" alt="illustation de cinéma">
+            <div class="carousel-caption d-md-block">
+              <h5>Des films incontournables</h5>
+              <p>Les films projetés sont tous les grands classiques du cinéma appartenant maintenant au domaine public.</p>
             </div>
           </div>
         </div>
@@ -97,17 +97,16 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card mb-3">
-              <a href="#" class="card-img-top"></a>
+              <span class="card-img-top" data-toggle="modal" data-target="#exampleModalCenter"></span>
               <div class="card-body">
                 <h5 class="card-title">Premier article</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Découvrez comment depuis plusieurs mois l'association collect des dons et effectue toutes les démarches nécessaires...</p>
                 <div class="row">
                   <div class="col-md-6">
                     <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
                   </div>
                   <div class="col-md-6">
-                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                    <button type="button" class="btn btn-red float-right" data-toggle="modal" data-target="#exampleModalCenter">Lire l'article</button>
                   </div>
                 </div>
               </div>
@@ -115,17 +114,16 @@
           </div>
           <div class="carousel-item">
             <div class="card mb-3">
-              <a href="#" class="card-img-top"></a>
+                <span class="card-img-top" data-toggle="modal" data-target="#exampleModalCenter"></span>
               <div class="card-body">
                 <h5 class="card-title">Deuxieme article</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Le choix des films fut difficile pour l'équipe, afin de proposer un divertissement accessible à tous...</p>
                 <div class="row">
                   <div class="col-md-6">
                     <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
                   </div>
                   <div class="col-md-6">
-                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                    <button type="button" class="btn btn-red float-right" data-toggle="modal" data-target="#exampleModalCenter">Lire l'article</button>
                   </div>
                 </div>
               </div>
@@ -133,17 +131,16 @@
           </div>
           <div class="carousel-item">
             <div class="card mb-3">
-              <a href="#" class="card-img-top"></a>
+                <span class="card-img-top" data-toggle="modal" data-target="#exampleModalCenter"></span>
               <div class="card-body">
                 <h5 class="card-title">Troisième article</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Bienvenue dans les coulisses de la logistique de l'évènement...</p>
                 <div class="row">
                   <div class="col-md-6">
                     <p class="card-text"><small class="text-muted">Publié le 25 aôut 2019</small></p>
                   </div>
                   <div class="col-md-6">
-                    <button type="button" class="btn btn-red float-right">Lire l'article</button>
+                    <button type="button" class="btn btn-red float-right" data-toggle="modal" data-target="#exampleModalCenter">Lire l'article</button>
                   </div>
                 </div>
               </div>
@@ -151,11 +148,26 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Titre de l'article</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Un festival de cinéma est un évènement annuel au cours duquel sont présentés des films dans des cinémas ou projections publiques, en général dans un lieu donné et pour une durée limitée dans le temps. Le festival peut être consacré à un genre cinématographique spécifique (fantastique, horreur, animation, etc.) ou un sujet en particulier (cinéma indépendant, court métrage, film noir, etc.) et consacré à des films locaux, nationaux ou internationaux. Ils sont souvent l'occasion pour des producteurs de présenter leur film en avant-première. Le festival de cinéma le plus connu et prestigieux au monde est probablement le Festival de Cannes, d'autres festivals sont également mondialement renommés, comme la Berlinale ou la Mostra de Venise (le plus ancien festival de film, créé en 1932), de même que le Festival de Toronto, qui gagne une importance croissante en raison entre autres des personnalités qu'il attire et de la rampe de lancement qu'il constitue en prévision de la cérémonie des Oscar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-6">
           <button id="prevButton" type="button" class="btn btn-red btn-block">Précédent</button>
         </div>
-        <div class="col-sm-6">
+        <div class="col-6">
           <button id="nextButton" type="button" class="btn btn-red btn-block">Suivant</button>
         </div>
       </div>
@@ -338,26 +350,23 @@
     <div class="container">
       <h2 class="display-4 text-center">Inscription aux projections</h2>
       <form id="contactForm">
-        <div class="form-group row">
-          <label for="" class="col-sm-3 col-form-label">Dates des projections</label>
-          <div class="form-check form-check-inline col-sm-2">
+        <div class="form-group row text-center">
+          <label for="" class="col-sm-12 col-form-label">Dates des projections</label>
+          <br>
+          <div class="form-check col-sm-3">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <span class="checkmark"></span>
             <label class="form-check-label" for="inlineCheckbox1">5 aôut</label>
           </div>
-          <div class="form-check form-check-inline col-sm-2">
+          <div class="form-check col-sm-3">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <span class="checkmark"></span>
             <label class="form-check-label" for="inlineCheckbox2">6 aôut</label>
           </div>
-          <div class="form-check form-check-inline col-sm-2">
+          <div class="form-check col-sm-3">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-            <span class="checkmark"></span>
             <label class="form-check-label" for="inlineCheckbox3">7 aôut</label>
           </div>
-          <div class="form-check form-check-inline col-sm-2">
+          <div class="form-check col-sm-3">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-            <span class="checkmark"></span>
             <label class="form-check-label" for="inlineCheckbox3">8 aôut</label>
           </div>
         </div>
@@ -383,7 +392,7 @@
       <div class="row">
         <div class="col-md-6 mt-md-0 mt-3">
           <h5>Festival des films de plein air</h5>
-          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <p>Le festival des films de plein air est un évènement organisé par l'association du même nom en collaboration avec la municipalité. Cet évènement est totalement gratuit et ouvert à tous!</p>
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-6 mb-md-0 mb-3">
