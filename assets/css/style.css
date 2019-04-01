@@ -41,15 +41,6 @@ nav a img {
     max-width: 100px;
 }
 
-.carousel-item {
-    overflow: hidden;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 1000px;
-}
-
 #carouselArticles {
     margin-top: 150px;
 }
@@ -67,7 +58,7 @@ footer {
 
 .card-img-top {
     height: 200px;
-    background-image: url('/assets/img/illustrations/movie-918655_1920.jpg');
+    background-image: url('../../assets/img/illustrations/movie-918655_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -85,19 +76,19 @@ footer {
 }
 
 #actualites {
-    background-image: url('/assets/img/illustrations/foule.jpg');
+    background-image: url('../../assets/img/illustrations/foule.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #listeDesFilms {
-    background-image: url('/assets/img/illustrations/grass1.jpg');
+    background-image: url('../../assets/img/illustrations/grass1.jpg');
     background-repeat: repeat;
     background-size: auto;
 }
 
 #inscription {
-    background-image: url('/assets/img/illustrations/cinema-442977_1920.jpg');
+    background-image: url('../../assets/img/illustrations/cinema-442977_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -126,6 +117,8 @@ footer {
 }
 
 .carousel-caption {
+    height: 150px;
+    top: 35%;
     bottom: 45%;
     background-color: rgba(0, 0, 0, .7);
     border-radius: 15px;
@@ -158,8 +151,16 @@ footer {
     font-size: .9em;
 }
 
-@media screen and (max-width: 640px) {
-    .carousel-item img {
-        
+@media (max-width: 576px) { 
+    .carousel-item .filter-effect {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+    .carousel-caption {
+        border: none;
+    }
+
+    .carousel-caption p {
+        font-size: .8em;
     }
 }
