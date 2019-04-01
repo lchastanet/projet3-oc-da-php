@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // dynamic header
     $(window).on('scroll', function () {
         if ($(window).scrollTop()) {
             $('#navbar').removeClass('navbar-transparent')
@@ -6,6 +7,7 @@ $(document).ready(function () {
             $('#navbar').addClass('navbar-transparent')
         }
     })
+    // artciles carousel
     $('#carouselArticles').carousel({
         interval: false
     })
@@ -15,6 +17,7 @@ $(document).ready(function () {
     $('#nextButton').click(function () {
         $('#carouselArticles').carousel('next')
     })
+    // scroll spy light
     $("nav ul li a[href^='#']").on('click', function(e) {
         e.preventDefault()
 
@@ -28,6 +31,7 @@ $(document).ready(function () {
      })
 })
 
+// google map
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
